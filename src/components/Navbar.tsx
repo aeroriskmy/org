@@ -40,9 +40,9 @@ export default function Navbar() {
                 {/* Logo */}
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-2">
-                    <div className="relative h-10 w-40">
+                    <div className="relative h-16 w-64">
                         <Image
-                            src="/logo.jpg"
+                            src="/logo.png"
                             alt="Aerorisk Logo"
                             fill
                             className="object-contain object-left"

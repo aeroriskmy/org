@@ -26,7 +26,7 @@ const testimonials = [
         role: '',
         company: '',
         image: null,
-        quote: 'The Space Insurance Masterclass is unparalleled. The insights into satellite coverage and launch risks were exactly what I needed.',
+        quote: 'The Insurance Masterclass is unparalleled. The insights into coverage and risks were exactly what I needed.',
         rating: 5,
     },
     {

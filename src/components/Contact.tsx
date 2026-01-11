@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
+import Image from 'next/image';
 
 export default function Contact() {
     const ref = useRef(null);
@@ -231,6 +232,16 @@ export default function Contact() {
                                         <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
                                     </svg>
                                 </a>
+                            </div>
+                            <div className="mt-6 border-t border-white/10 pt-6">
+                                <div className="relative w-24 h-24">
+                                    <Image
+                                        src="/hrd_corp.jpg"
+                                        alt="HRD Corp Claimable"
+                                        fill
+                                        className="object-contain rounded-full"
+                                    />
+                                </div>
                             </div>
                         </div>
                     </motion.div>

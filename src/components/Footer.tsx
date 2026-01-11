@@ -47,7 +47,7 @@ export default function Footer() {
                         <a href="#home" className="flex items-center gap-2 mb-6">
                             <div className="relative h-10 w-40">
                                 <Image
-                                    src="/logo.jpg"
+                                    src="/logo.png"
                                     alt="Aerorisk Logo"
                                     fill
                                     className="object-contain object-left"
