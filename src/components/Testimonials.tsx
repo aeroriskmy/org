@@ -6,33 +6,33 @@ import { useRef, useState } from 'react';
 
 const testimonials = [
     {
-        name: 'Sarah Chen',
-        role: 'Senior Underwriter',
-        company: 'Lloyd\'s of London',
+        name: 'Perinsuran Brokar',
+        role: '',
+        company: '',
         image: null,
         quote: 'The Advanced Hull & Liability course transformed my approach to risk assessment. The practical case studies were invaluable.',
         rating: 5,
     },
     {
-        name: 'Michael Rodriguez',
-        role: 'Claims Manager',
-        company: 'AIG Aviation',
+        name: 'Tradewinds Insurance broker',
+        role: '',
+        company: '',
         image: null,
         quote: 'Comprehensive, well-structured, and taught by true industry experts. This certification opened doors I never thought possible.',
         rating: 5,
     },
     {
-        name: 'Dr. Emma Thompson',
-        role: 'Space Insurance Specialist',
-        company: 'Swiss Re',
+        name: 'BIB insurance brokers',
+        role: '',
+        company: '',
         image: null,
         quote: 'The Space Insurance Masterclass is unparalleled. The insights into satellite coverage and launch risks were exactly what I needed.',
         rating: 5,
     },
     {
-        name: 'James Park',
-        role: 'Aviation Broker',
-        company: 'Marsh McLennan',
+        name: 'AFR Brokers',
+        role: '',
+        company: '',
         image: null,
         quote: 'Outstanding program that bridges theory with real-world application. The networking opportunities alone were worth it.',
         rating: 5,
@@ -103,8 +103,8 @@ export default function Testimonials() {
                                 </div>
                                 <div>
                                     <div className="text-white font-medium text-sm">{testimonial.name}</div>
-                                    <div className="text-gray-500 text-xs">{testimonial.role}</div>
-                                    <div className="text-[#d4a853] text-xs">{testimonial.company}</div>
+                                    {testimonial.role && <div className="text-gray-500 text-xs">{testimonial.role}</div>}
+                                    {testimonial.company && <div className="text-[#d4a853] text-xs">{testimonial.company}</div>}
                                 </div>
                             </div>
                         </motion.div>

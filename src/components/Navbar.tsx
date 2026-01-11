@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const navLinks = [
     { name: 'Home', href: '/#home' },
@@ -37,15 +38,17 @@ export default function Navbar() {
         >
             <div className="container mx-auto px-6 flex items-center justify-between">
                 {/* Logo */}
+                {/* Logo */}
                 <Link href="/" className="flex items-center gap-2">
-                    <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#d4a853] to-[#b8860b] flex items-center justify-center">
-                        <svg className="w-6 h-6 text-[#0a0f1c]" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z" />
-                        </svg>
+                    <div className="relative h-10 w-40">
+                        <Image
+                            src="/logo.jpg"
+                            alt="Aerorisk Logo"
+                            fill
+                            className="object-contain object-left"
+                            priority
+                        />
                     </div>
-                    <span className="text-xl font-bold text-white">
-                        Aero<span className="text-[#d4a853]">risk</span>
-                    </span>
                 </Link>
 
                 {/* Desktop Navigation */}

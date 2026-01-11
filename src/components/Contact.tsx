@@ -99,10 +99,16 @@ export default function Contact() {
                                     style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' fill=\'none\' viewBox=\'0 0 24 24\' stroke=\'%236b7280\'%3E%3Cpath stroke-linecap=\'round\' stroke-linejoin=\'round\' stroke-width=\'2\' d=\'M19 9l-7 7-7-7\'/%3E%3C/svg%3E")', backgroundRepeat: 'no-repeat', backgroundPosition: 'right 1rem center', backgroundSize: '1.5rem' }}
                                 >
                                     <option value="" className="bg-[#1a1f35]">Select a program</option>
-                                    <option value="fundamentals" className="bg-[#1a1f35]">Aviation Insurance Fundamentals</option>
-                                    <option value="hull-liability" className="bg-[#1a1f35]">Advanced Hull & Liability</option>
-                                    <option value="space" className="bg-[#1a1f35]">Space Insurance Masterclass</option>
-                                    <option value="custom" className="bg-[#1a1f35]">Custom Corporate Training</option>
+                                    <option value="airports-airlines-liability" className="bg-[#1a1f35]">Airports and Airlines operations liability insurance underwriting workshop (1.5 days)</option>
+                                    <option value="surveyors-adjusters-claims" className="bg-[#1a1f35]">Aviation Insurance: The role of Surveyors/Adjusters in Processing Claims (1 day)</option>
+                                    <option value="reinsurance-workshop" className="bg-[#1a1f35]">Aviation reinsurance workshop (4 hours)</option>
+                                    <option value="drone-insurance" className="bg-[#1a1f35]">Drone insurance underwriting workshop (4 hours)</option>
+                                    <option value="mro-operations" className="bg-[#1a1f35]">Risks and Liabilities in MRO operations: From an insurance perspective (1 day)</option>
+                                    <option value="law-claims" className="bg-[#1a1f35]">Aviation Insurance: Understanding law and Claims (1 day)</option>
+                                    <option value="air-cargo-logistics" className="bg-[#1a1f35]">Air Cargo Logistics Operations: Understanding Risks and Liabilities (2 days)</option>
+                                    <option value="ground-handling" className="bg-[#1a1f35]">Airport ground handling operations: Understanding risks and liabilities (2 days)</option>
+                                    <option value="intermediate-programme" className="bg-[#1a1f35]">Aerorisk Intermediate Programme in Aviation Insurance Practice (4 months)</option>
+                                    <option value="advanced-programme" className="bg-[#1a1f35]">Aerorisk Advanced Programme in Aviation Insurance Practice (5 months)</option>
                                 </select>
                             </div>
 
@@ -195,15 +201,36 @@ export default function Contact() {
                         <div className="glass rounded-2xl p-6">
                             <h3 className="text-xl font-semibold text-white mb-4">Follow Us</h3>
                             <div className="flex gap-4">
-                                {['LinkedIn', 'Twitter', 'YouTube'].map((social, index) => (
-                                    <a
-                                        key={index}
-                                        href="#"
-                                        className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center text-gray-400 hover:text-[#d4a853] hover:bg-[#d4a853]/10 transition-all duration-300"
-                                    >
-                                        {social[0]}
-                                    </a>
-                                ))}
+                                <a
+                                    href="https://www.facebook.com/profile.php?id=100064746020159"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center text-gray-400 hover:text-[#d4a853] hover:bg-[#d4a853]/10 transition-all duration-300"
+                                >
+                                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                                    </svg>
+                                </a>
+                                <a
+                                    href="https://www.linkedin.com/company/aerorisk/"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center text-gray-400 hover:text-[#d4a853] hover:bg-[#d4a853]/10 transition-all duration-300"
+                                >
+                                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z" />
+                                    </svg>
+                                </a>
+                                <a
+                                    href="https://x.com/aerorisk"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center text-gray-400 hover:text-[#d4a853] hover:bg-[#d4a853]/10 transition-all duration-300"
+                                >
+                                    <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+                                        <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z" />
+                                    </svg>
+                                </a>
                             </div>
                         </div>
                     </motion.div>

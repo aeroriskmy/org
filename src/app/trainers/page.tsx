@@ -63,6 +63,26 @@ const trainers = [
             'She works with international organizations, regulators, and satellite operators.'
         ],
         education: []
+    },
+    {
+        name: 'Mourad El Aroui',
+        role: 'Underwriter at Tunis Re',
+        image: '/trainers/mourad_el_aroui.jpg',
+        quote: 'Specialized in Aviation Underwriting and Reinsurance strategies.',
+        bio: [
+            'Mourad El Aroui is an experienced Underwriter at Tunis Re. He serves as a trainer specializing in Aviation Underwriting and Reinsurance, sharing his extensive industry knowledge with professionals.'
+        ],
+        education: []
+    },
+    {
+        name: 'Dr. Lourdes Gregory Stephen Santiago',
+        role: 'Lawyer & Aviation Insurance Trainer',
+        image: '/trainers/lourdes_santiago.jpg',
+        quote: ' bridging the gap between legal principles and aviation insurance practice.',
+        bio: [
+            'Dr. Lourdes Gregory Stephen Santiago is a lawyer by profession with deep expertise in the aviation sector. He actively trains and teaches professionals on Aviation Insurance law and Claims management.'
+        ],
+        education: []
     }
 ];
 
