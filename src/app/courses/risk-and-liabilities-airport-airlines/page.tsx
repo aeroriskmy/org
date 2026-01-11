@@ -25,35 +25,18 @@ export default function AirportOperationsPage() {
             <Navbar />
 
             {/* Header Section */}
-            <section className="relative pt-64 pb-24 overflow-hidden">
+            <section className="relative pt-96 pb-20 overflow-hidden">
                 <div className="container mx-auto px-4 relative z-10 text-center text-white pt-12">
-                    <motion.h1
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 font-outfit tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-200 to-slate-400"
-                    >
-                        Risk and Liabilities in Airport<br />and Airlines Operations
-                    </motion.h1>
-
-                    <motion.div
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.2 }}
-                    >
-                        <button className="px-8 py-3 bg-[#d4a853] hover:bg-[#b08833] text-black font-bold rounded-full transition-all shadow-lg shadow-[#d4a853]/20 flex items-center gap-2 mx-auto hover:scale-105 active:scale-95">
-                            <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z" />
-                            </svg>
-                            START COURSE
-                        </button>
-                    </motion.div>
                 </div>
             </section>
 
+            {/* Spacer to guarantee gap */}
+            <div className="h-24 w-full"></div>
+
             {/* Course Details List */}
-            <section className="py-20 relative z-10">
+            <section className="pt-64 pb-48 relative z-10">
                 <div className="container mx-auto px-4 max-w-6xl">
-                    <div className="flex flex-col gap-16">
+                    <div className="flex flex-col gap-8">
                         {subCourses.map((course, index) => (
                             <motion.div
                                 key={index}
@@ -108,6 +91,9 @@ export default function AirportOperationsPage() {
                     </div>
                 </div>
             </section>
+
+            {/* Spacer to guarantee gap */}
+            <div className="h-24 w-full"></div>
 
             <Footer />
         </main>
