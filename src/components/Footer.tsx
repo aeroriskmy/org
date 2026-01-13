@@ -1,6 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { useRef, useState } from 'react';
 import Image from 'next/image';
 
 const footerLinks = {
@@ -31,6 +32,36 @@ const footerLinks = {
 };
 
 export default function Footer() {
+    const [status, setStatus] = useState<'idle' | 'sending' | 'sent'>('idle');
+
+    const handleNewsletterSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+        setStatus('sending');
+
+        const formData = new FormData(e.currentTarget);
+        // Add a subject for the newsletter notification
+        formData.append('_subject', 'New Newsletter Subscription');
+
+        try {
+            const response = await fetch("https://formsubmit.co/ajax/register@aerorisk.org.my", {
+                method: "POST",
+                body: formData
+            });
+
+            if (response.ok) {
+                setStatus('sent');
+                (e.target as HTMLFormElement).reset();
+                setTimeout(() => setStatus('idle'), 3000);
+            } else {
+                setStatus('idle');
+                alert("Something went wrong. Please try again.");
+            }
+        } catch (error) {
+            setStatus('idle');
+            alert("Something went wrong. Please check your connection.");
+        }
+    };
+
     return (
         <footer className="relative bg-[#070b14] pt-20 pb-8 overflow-hidden">
             {/* Top Border */}
@@ -62,16 +93,24 @@ export default function Footer() {
                         {/* Newsletter */}
                         <div>
                             <h4 className="text-white font-medium mb-3">Subscribe to our newsletter</h4>
-                            <div className="flex gap-2">
+                            <form onSubmit={handleNewsletterSubmit} className="flex gap-2">
                                 <input
                                     type="email"
+                                    name="email"
+                                    required
                                     placeholder="Enter your email"
                                     className="flex-1 px-4 py-2.5 rounded-lg bg-white/5 border border-white/10 text-white placeholder-gray-500 text-sm focus:border-[#d4a853]/50 focus:outline-none transition-colors"
                                 />
-                                <button className="px-4 py-2.5 rounded-lg bg-[#d4a853] text-[#0a0f1c] font-semibold text-sm hover:bg-[#e8c879] transition-colors">
-                                    Subscribe
+                                <button
+                                    type="submit"
+                                    disabled={status !== 'idle'}
+                                    className="px-4 py-2.5 rounded-lg bg-[#d4a853] text-[#0a0f1c] font-semibold text-sm hover:bg-[#e8c879] transition-colors disabled:opacity-50"
+                                >
+                                    {status === 'idle' && 'Subscribe'}
+                                    {status === 'sending' && '...'}
+                                    {status === 'sent' && '✓'}
                                 </button>
-                            </div>
+                            </form>
                         </div>
                     </div>
 

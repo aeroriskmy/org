@@ -10,10 +10,31 @@ export default function Contact() {
     const isInView = useInView(ref, { once: true, margin: '-100px' });
     const [formStatus, setFormStatus] = useState<'idle' | 'sending' | 'sent'>('idle');
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
         e.preventDefault();
         setFormStatus('sending');
-        setTimeout(() => setFormStatus('sent'), 1500);
+
+        const formData = new FormData(e.currentTarget);
+
+        try {
+            const response = await fetch("https://formsubmit.co/ajax/register@aerorisk.org.my", {
+                method: "POST",
+                body: formData
+            });
+
+            if (response.ok) {
+                setFormStatus('sent');
+                (e.target as HTMLFormElement).reset();
+            } else {
+                console.error("Form submission failed");
+                setFormStatus('idle'); // Allow retry
+                alert("Something went wrong. Please try again.");
+            }
+        } catch (error) {
+            console.error("Form submission error", error);
+            setFormStatus('idle');
+            alert("Something went wrong. Please check your connection.");
+        }
     };
 
     return (
@@ -52,12 +73,20 @@ export default function Contact() {
                         transition={{ duration: 0.6, delay: 0.2 }}
                         className="glass rounded-2xl p-8"
                     >
-                        <form onSubmit={handleSubmit} className="space-y-6">
+                        <form
+                            onSubmit={handleSubmit}
+                            className="space-y-6"
+                        >
+                            <input type="hidden" name="_subject" value="New Contact Form Submission" />
+                            <input type="hidden" name="_template" value="table" />
+                            <input type="hidden" name="_captcha" value="false" />
+
                             <div className="grid sm:grid-cols-2 gap-6">
                                 <div>
                                     <label className="block text-sm font-medium text-gray-300 mb-2">First Name</label>
                                     <input
                                         type="text"
+                                        name="firstName"
                                         required
                                         className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:border-[#d4a853]/50 focus:outline-none transition-colors"
                                         placeholder="John"
@@ -67,6 +96,7 @@ export default function Contact() {
                                     <label className="block text-sm font-medium text-gray-300 mb-2">Last Name</label>
                                     <input
                                         type="text"
+                                        name="lastName"
                                         required
                                         className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:border-[#d4a853]/50 focus:outline-none transition-colors"
                                         placeholder="Doe"
@@ -78,6 +108,7 @@ export default function Contact() {
                                 <label className="block text-sm font-medium text-gray-300 mb-2">Email Address</label>
                                 <input
                                     type="email"
+                                    name="email"
                                     required
                                     className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:border-[#d4a853]/50 focus:outline-none transition-colors"
                                     placeholder="john@example.com"
@@ -88,6 +119,7 @@ export default function Contact() {
                                 <label className="block text-sm font-medium text-gray-300 mb-2">Phone Number</label>
                                 <input
                                     type="tel"
+                                    name="phone"
                                     className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:border-[#d4a853]/50 focus:outline-none transition-colors"
                                     placeholder="+1 (555) 000-0000"
                                 />
@@ -96,6 +128,7 @@ export default function Contact() {
                             <div>
                                 <label className="block text-sm font-medium text-gray-300 mb-2">Interested Program</label>
                                 <select
+                                    name="program"
                                     className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white focus:border-[#d4a853]/50 focus:outline-none transition-colors appearance-none cursor-pointer"
                                     style={{ backgroundImage: 'url("data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' fill=\'none\' viewBox=\'0 0 24 24\' stroke=\'%236b7280\'%3E%3Cpath stroke-linecap=\'round\' stroke-linejoin=\'round\' stroke-width=\'2\' d=\'M19 9l-7 7-7-7\'/%3E%3C/svg%3E")', backgroundRepeat: 'no-repeat', backgroundPosition: 'right 1rem center', backgroundSize: '1.5rem' }}
                                 >
@@ -116,6 +149,7 @@ export default function Contact() {
                             <div>
                                 <label className="block text-sm font-medium text-gray-300 mb-2">Message</label>
                                 <textarea
+                                    name="message"
                                     rows={4}
                                     className="w-full px-4 py-3 rounded-xl bg-white/5 border border-white/10 text-white placeholder-gray-500 focus:border-[#d4a853]/50 focus:outline-none transition-colors resize-none"
                                     placeholder="Tell us about your background and goals..."
