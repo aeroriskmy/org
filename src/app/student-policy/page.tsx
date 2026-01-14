@@ -262,7 +262,7 @@ export default function StudentPolicy() {
                         initial={{ opacity: 0, y: 30 }}
                         animate={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.8 }}
-                        className="text-center max-w-4xl mx-auto"
+                        className="text-center max-w-5xl mx-auto"
                     >
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 font-outfit">
                             Student <span className="text-[#d4a853]">Policies</span>
@@ -277,7 +277,7 @@ export default function StudentPolicy() {
             {/* Content Sections */}
             <section className="pb-24">
                 <div className="container mx-auto px-6">
-                    <div className="max-w-4xl mx-auto">
+                    <div className="max-w-5xl mx-auto">
                         {policySections.map((section, index) => (
                             <div key={index}>
                                 <motion.div
