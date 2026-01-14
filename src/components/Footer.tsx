@@ -63,7 +63,7 @@ export default function Footer() {
     };
 
     return (
-        <footer className="relative bg-[#070b14] pt-32 pb-16 overflow-hidden">
+        <footer className="relative bg-[#070b14] pt-48 pb-24 overflow-hidden">
             {/* Top Border */}
             <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#d4a853]/30 to-transparent" />
 
@@ -72,7 +72,7 @@ export default function Footer() {
 
             <div className="container mx-auto relative z-10">
                 {/* Main Footer */}
-                <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-12 mb-16">
+                <div className="grid md:grid-cols-2 lg:grid-cols-6 gap-20 mb-24">
                     {/* Brand Column */}
                     <div className="lg:col-span-2">
                         <a href="#home" className="flex items-center gap-2 mb-6">
@@ -136,10 +136,10 @@ export default function Footer() {
                 </div>
 
                 {/* Divider */}
-                <div className="h-px bg-white/10 mb-8" />
+                <div className="h-px bg-white/10 mb-12" />
 
                 {/* Bottom Footer */}
-                <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+                <div className="flex flex-col md:flex-row justify-between items-center gap-6">
                     <div className="text-gray-500 text-sm">
                         © {new Date().getFullYear()} Aerorisk Education. All rights reserved.
                     </div>
