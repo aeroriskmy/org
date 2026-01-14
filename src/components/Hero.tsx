@@ -56,7 +56,7 @@ export default function Hero() {
                     initial={{ opacity: 0, y: 30 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.8, delay: 0.6 }}
-                    className="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto mb-10"
+                    className="text-lg sm:text-xl text-gray-400 max-w-2xl mx-auto mb-10 text-center"
                 >
                     Elevate your expertise with world-class training programs.
                     Join the elite professionals protecting the future of aerospace.
