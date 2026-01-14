@@ -7,13 +7,13 @@ import Footer from '@/components/Footer';
 const subCourses = [
     {
         title: 'Aerorisk Intermediate Programme in Aviation Insurance Practice',
-        about: 'In the aviation industry, choosing the right aircraft insurance is very critical and important. It is important to understand knowledge in aviation insurance for people to embark into the aviation insurance industry. The crucial aspect in this is the knowledge on aircrafts and its function, the mechanism of flying and finally the underwriting and management of aviation insurance. It is a practical industry oriented course and enables people in the aviation insurance industry to perform effectively once completed. This is a ATHE endorsed programme which is regulated by OFQUAL, UK',
+        about: 'In the aviation industry, choosing the right aircraft insurance is very critical and important. It is important to understand knowledge in aviation insurance for people to embark into the aviation insurance industry. The crucial aspect in this is the knowledge on aircrafts and its function, the mechanism of flying and finally the underwriting and management of aviation insurance. It is a practical industry oriented course and enables people in the aviation insurance industry to perform effectively once completed. This is a ATHE endorsed programme',
         duration: '60 guided learning hours / 4 months',
         commencement: 'Registration is open now!'
     },
     {
         title: 'Aerorisk Advanced Programme in Aviation Insurance Practice',
-        about: 'The Aerorisk Advanced Programme in Aviation Insurance Practice builds upon the subjects covered in the intermediate and give a more extensive coverage of aviation insurance knowledge and understanding. You will expand your knowledge and skills more by learning about types of aircrafts and its function, reinsurance, law& claims and policies, clauses and endorsements. This is a ATHE endorsed programme which is regulated by OFQUAL, UK',
+        about: 'The Aerorisk Advanced Programme in Aviation Insurance Practice builds upon the subjects covered in the intermediate and give a more extensive coverage of aviation insurance knowledge and understanding. You will expand your knowledge and skills more by learning about types of aircrafts and its function, reinsurance, law& claims and policies, clauses and endorsements. This is a ATHE endorsed programme',
         duration: '100 guided learning hours / 4 months',
         commencement: 'Registration is open now!'
     },

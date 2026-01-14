@@ -99,26 +99,8 @@ export default function TrainersPage() {
 
             <Navbar />
 
-            {/* Header Section */}
-            <section className="relative pt-64 pb-24 overflow-hidden">
-                <div className="container mx-auto px-4 relative z-10 text-center text-white pt-12">
-                    <motion.h1
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        className="text-4xl md:text-5xl lg:text-7xl font-bold mb-6 font-outfit tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-white via-slate-200 to-slate-400"
-                    >
-                        Our Trainers
-                    </motion.h1>
-                    <motion.p
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        transition={{ delay: 0.1 }}
-                        className="text-xl text-slate-400 max-w-2xl mx-auto font-light"
-                    >
-                        Learn from the industry&apos;s leading professionals and experts.
-                    </motion.p>
-                </div>
-            </section>
+            {/* Spacer to guarantee gap - "Hidden barrier" */}
+            <div className="h-32 md:h-48 w-full"></div>
 
             {/* Trainers Grid */}
             <section className="py-20 relative z-10">
@@ -255,6 +237,9 @@ export default function TrainersPage() {
                     </motion.div>
                 )}
             </AnimatePresence>
+
+            {/* Bottom Spacer */}
+            <div className="h-32"></div>
 
             <Footer />
         </main>
