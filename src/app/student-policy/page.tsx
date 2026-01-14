@@ -15,25 +15,25 @@ export default function StudentPolicy() {
         {
             title: "Equality & Diversity Policy",
             content: (
-                <div className="space-y-6 text-center">
+                <div className="space-y-6">
                     <div className="space-y-3">
-                        <h4 className="text-xl font-semibold text-white text-center">Policy Statement</h4>
-                        <p className="text-gray-400 leading-relaxed text-center">
+                        <h4 className="text-xl font-semibold text-white">Policy Statement</h4>
+                        <p className="text-gray-400 leading-relaxed">
                             We are committed to promoting equality of opportunity, eliminating unlawful discrimination, and fostering an inclusive learning and working environment for all learners, staff, and stakeholders.
                         </p>
                     </div>
 
                     <div className="space-y-3">
-                        <h4 className="text-xl font-semibold text-white text-center">Scope</h4>
-                        <p className="text-gray-400 leading-relaxed text-center">
+                        <h4 className="text-xl font-semibold text-white">Scope</h4>
+                        <p className="text-gray-400 leading-relaxed">
                             This policy applies to all staff, learners, contractors, partners, and visitors engaged with our training programmes.
                         </p>
                     </div>
 
                     <div className="space-y-3">
-                        <h4 className="text-xl font-semibold text-white text-center">Legal Framework</h4>
-                        <p className="text-gray-400 leading-relaxed text-center">Aligned with:</p>
-                        <ul className="list-none text-gray-400 space-y-2 flex flex-col items-center">
+                        <h4 className="text-xl font-semibold text-white">Legal Framework</h4>
+                        <p className="text-gray-400 leading-relaxed">Aligned with:</p>
+                        <ul className="list-disc list-inside text-gray-400 space-y-2 ml-2">
                             <li>Equality Act 2010 (UK reference)</li>
                             <li>Malaysian Employment Act 1955</li>
                             <li>Human Rights Commission of Malaysia Act 1999</li>
@@ -41,8 +41,8 @@ export default function StudentPolicy() {
                     </div>
 
                     <div className="space-y-3">
-                        <h4 className="text-xl font-semibold text-white text-center">Our Commitments</h4>
-                        <ul className="list-none text-gray-400 space-y-2 flex flex-col items-center">
+                        <h4 className="text-xl font-semibold text-white">Our Commitments</h4>
+                        <ul className="list-disc list-inside text-gray-400 space-y-2 ml-2">
                             <li>Provide equal access to learning regardless of race, gender, religion, disability, age, marital status, or any protected characteristic.</li>
                             <li>Make reasonable adjustments for learners with disabilities or additional needs.</li>
                             <li>Provide fair recruitment, assessment, and progression opportunities.</li>
@@ -51,8 +51,8 @@ export default function StudentPolicy() {
                     </div>
 
                     <div className="space-y-3">
-                        <h4 className="text-xl font-semibold text-white text-center">Responsibilities</h4>
-                        <ul className="list-none text-gray-400 space-y-2 flex flex-col items-center">
+                        <h4 className="text-xl font-semibold text-white">Responsibilities</h4>
+                        <ul className="list-disc list-inside text-gray-400 space-y-2 ml-2">
                             <li><strong className="text-gray-300">Management:</strong> Ensures implementation and annual review.</li>
                             <li><strong className="text-gray-300">Trainers/Assessors:</strong> Apply inclusive teaching practices.</li>
                             <li><strong className="text-gray-300">Learners:</strong> Treat others with respect and avoid discriminatory behaviour.</li>
@@ -60,8 +60,8 @@ export default function StudentPolicy() {
                     </div>
 
                     <div className="space-y-3">
-                        <h4 className="text-xl font-semibold text-white text-center">Reporting Discrimination</h4>
-                        <p className="text-gray-400 leading-relaxed text-center">
+                        <h4 className="text-xl font-semibold text-white">Reporting Discrimination</h4>
+                        <p className="text-gray-400 leading-relaxed">
                             Any learner or staff member may report incidents confidentially to the Programme Manager for investigation.
                         </p>
                     </div>
@@ -71,17 +71,17 @@ export default function StudentPolicy() {
         {
             title: "Health & Safety Policy",
             content: (
-                <div className="space-y-6 text-center">
+                <div className="space-y-6">
                     <div className="space-y-3">
-                        <h4 className="text-xl font-semibold text-white text-center">Statement of Commitment</h4>
-                        <p className="text-gray-400 leading-relaxed text-center">
+                        <h4 className="text-xl font-semibold text-white">Statement of Commitment</h4>
+                        <p className="text-gray-400 leading-relaxed">
                             We are committed to ensuring the health, safety, and well-being of all learners, staff, and visitors in line with the Occupational Safety and Health Act (OSHA) 1994 (Malaysia).
                         </p>
                     </div>
 
                     <div className="space-y-3">
-                        <h4 className="text-xl font-semibold text-white text-center">Responsibilities</h4>
-                        <ul className="list-none text-gray-400 space-y-2 flex flex-col items-center">
+                        <h4 className="text-xl font-semibold text-white">Responsibilities</h4>
+                        <ul className="list-disc list-inside text-gray-400 space-y-2 ml-2">
                             <li><strong className="text-gray-300">Management:</strong> Creates safe training environments, ensures risk assessments.</li>
                             <li><strong className="text-gray-300">Trainers:</strong> Maintain safe classrooms, report hazards.</li>
                             <li><strong className="text-gray-300">Learners:</strong> Follow safety guidance and report unsafe situations.</li>
@@ -89,8 +89,8 @@ export default function StudentPolicy() {
                     </div>
 
                     <div className="space-y-3">
-                        <h4 className="text-xl font-semibold text-white text-center">Key Areas</h4>
-                        <ul className="list-none text-gray-400 space-y-2 flex flex-col items-center">
+                        <h4 className="text-xl font-semibold text-white">Key Areas</h4>
+                        <ul className="list-disc list-inside text-gray-400 space-y-2 ml-2">
                             <li>Fire safety and emergency procedures</li>
                             <li>First aid availability</li>
                             <li>Safe use of training equipment</li>
@@ -100,9 +100,9 @@ export default function StudentPolicy() {
                     </div>
 
                     <div className="space-y-3">
-                        <h4 className="text-xl font-semibold text-white text-center">Risk Assessment</h4>
-                        <p className="text-gray-400 leading-relaxed text-center">Regular assessments conducted for:</p>
-                        <ul className="list-none text-gray-400 space-y-2 flex flex-col items-center">
+                        <h4 className="text-xl font-semibold text-white">Risk Assessment</h4>
+                        <p className="text-gray-400 leading-relaxed">Regular assessments conducted for:</p>
+                        <ul className="list-disc list-inside text-gray-400 space-y-2 ml-2">
                             <li>Classrooms</li>
                             <li>Online delivery platforms</li>
                             <li>Practical activities</li>
@@ -111,8 +111,8 @@ export default function StudentPolicy() {
                     </div>
 
                     <div className="space-y-3">
-                        <h4 className="text-xl font-semibold text-white text-center">Accident Reporting</h4>
-                        <p className="text-gray-400 leading-relaxed text-center">
+                        <h4 className="text-xl font-semibold text-white">Accident Reporting</h4>
+                        <p className="text-gray-400 leading-relaxed">
                             All accidents must be recorded and reviewed to prevent recurrence.
                         </p>
                     </div>
@@ -122,36 +122,36 @@ export default function StudentPolicy() {
         {
             title: "Complaints Policy",
             content: (
-                <div className="space-y-6 text-center">
+                <div className="space-y-6">
                     <div className="space-y-3">
-                        <h4 className="text-xl font-semibold text-white text-center">Policy Statement</h4>
-                        <p className="text-gray-400 leading-relaxed text-center">
+                        <h4 className="text-xl font-semibold text-white">Policy Statement</h4>
+                        <p className="text-gray-400 leading-relaxed">
                             We aim to resolve concerns fairly, promptly, and transparently at the lowest level possible.
                         </p>
                     </div>
 
                     <div className="space-y-3">
-                        <h4 className="text-xl font-semibold text-white text-center">Who Can Complain</h4>
-                        <p className="text-gray-400 leading-relaxed text-center">
+                        <h4 className="text-xl font-semibold text-white">Who Can Complain</h4>
+                        <p className="text-gray-400 leading-relaxed">
                             Learners, staff, partners, or external stakeholders.
                         </p>
                     </div>
 
                     <div className="space-y-3">
-                        <h4 className="text-xl font-semibold text-white text-center">Procedure</h4>
+                        <h4 className="text-xl font-semibold text-white">Procedure</h4>
 
-                        <div className="space-y-4 flex flex-col items-center">
+                        <div className="pl-4 border-l-2 border-[#d4a853]/30 space-y-4">
                             <div>
-                                <h5 className="text-lg font-medium text-[#d4a853] text-center">Informal Resolution</h5>
-                                <ul className="list-none text-gray-400 mt-2 flex flex-col items-center">
+                                <h5 className="text-lg font-medium text-[#d4a853]">Informal Resolution</h5>
+                                <ul className="list-disc list-inside text-gray-400 mt-2">
                                     <li>Raise the issue with trainer or admin team.</li>
                                     <li>Attempt resolution within 5 working days.</li>
                                 </ul>
                             </div>
 
                             <div>
-                                <h5 className="text-lg font-medium text-[#d4a853] text-center">Formal Complaint</h5>
-                                <ul className="list-none text-gray-400 mt-2 flex flex-col items-center">
+                                <h5 className="text-lg font-medium text-[#d4a853]">Formal Complaint</h5>
+                                <ul className="list-disc list-inside text-gray-400 mt-2">
                                     <li>Submit written complaint to Programme Manager.</li>
                                     <li>Acknowledgement within 3 working days.</li>
                                     <li>Investigation completed within 10 working days.</li>
@@ -160,8 +160,8 @@ export default function StudentPolicy() {
                             </div>
 
                             <div>
-                                <h5 className="text-lg font-medium text-[#d4a853] text-center">Appeal</h5>
-                                <ul className="list-none text-gray-400 mt-2 flex flex-col items-center">
+                                <h5 className="text-lg font-medium text-[#d4a853]">Appeal</h5>
+                                <ul className="list-disc list-inside text-gray-400 mt-2">
                                     <li>Appeals reviewed by senior management not previously involved.</li>
                                     <li>Decision issued within 14 working days.</li>
                                 </ul>
@@ -170,8 +170,8 @@ export default function StudentPolicy() {
                     </div>
 
                     <div className="space-y-3">
-                        <h4 className="text-xl font-semibold text-white text-center">Confidentiality & non-retaliation</h4>
-                        <p className="text-gray-400 leading-relaxed text-center">
+                        <h4 className="text-xl font-semibold text-white">Confidentiality & non-retaliation</h4>
+                        <p className="text-gray-400 leading-relaxed">
                             Complainants are protected from retaliation, and information is kept confidential.
                         </p>
                     </div>
@@ -181,17 +181,17 @@ export default function StudentPolicy() {
         {
             title: "Data Protection & GDPR Policy",
             content: (
-                <div className="space-y-6 text-center">
+                <div className="space-y-6">
                     <div className="space-y-3">
-                        <h4 className="text-xl font-semibold text-white text-center">Purpose</h4>
-                        <p className="text-gray-400 leading-relaxed text-center">
+                        <h4 className="text-xl font-semibold text-white">Purpose</h4>
+                        <p className="text-gray-400 leading-relaxed">
                             To protect personal data collected from learners, staff, and partners and ensure compliance with GDPR principles and Malaysia’s PDPA 2010.
                         </p>
                     </div>
 
                     <div className="space-y-3">
-                        <h4 className="text-xl font-semibold text-white text-center">Data We Collect</h4>
-                        <ul className="list-none text-gray-400 space-y-2 flex flex-col items-center">
+                        <h4 className="text-xl font-semibold text-white">Data We Collect</h4>
+                        <ul className="list-disc list-inside text-gray-400 space-y-2 ml-2">
                             <li>Personal identification information</li>
                             <li>Academic records</li>
                             <li>Assessment results</li>
@@ -200,16 +200,16 @@ export default function StudentPolicy() {
                     </div>
 
                     <div className="space-y-3">
-                        <h4 className="text-xl font-semibold text-white text-center">Data Usage</h4>
-                        <p className="text-gray-400 leading-relaxed text-center">
+                        <h4 className="text-xl font-semibold text-white">Data Usage</h4>
+                        <p className="text-gray-400 leading-relaxed">
                             Data is used for programme administration, reporting, quality assurance and regulatory compliance.
                         </p>
                     </div>
 
                     <div className="space-y-3">
-                        <h4 className="text-xl font-semibold text-white text-center">Principles</h4>
-                        <p className="text-gray-400 leading-relaxed text-center">We commit to:</p>
-                        <ul className="list-none text-gray-400 space-y-2 flex flex-col items-center">
+                        <h4 className="text-xl font-semibold text-white">Principles</h4>
+                        <p className="text-gray-400 leading-relaxed">We commit to:</p>
+                        <ul className="list-disc list-inside text-gray-400 space-y-2 ml-2">
                             <li>Lawful and transparent processing</li>
                             <li>Limiting data to what is necessary</li>
                             <li>Ensuring accuracy</li>
@@ -219,8 +219,8 @@ export default function StudentPolicy() {
                     </div>
 
                     <div className="space-y-3">
-                        <h4 className="text-xl font-semibold text-white text-center">Storage & Security</h4>
-                        <ul className="list-none text-gray-400 space-y-2 flex flex-col items-center">
+                        <h4 className="text-xl font-semibold text-white">Storage & Security</h4>
+                        <ul className="list-disc list-inside text-gray-400 space-y-2 ml-2">
                             <li>All digital data stored on encrypted systems.</li>
                             <li>Hard copies secured in locked cabinets.</li>
                             <li>Limited access for authorised personnel only.</li>
@@ -228,15 +228,15 @@ export default function StudentPolicy() {
                     </div>
 
                     <div className="space-y-3">
-                        <h4 className="text-xl font-semibold text-white text-center">Rights of Data Subjects</h4>
-                        <p className="text-gray-400 leading-relaxed text-center">
+                        <h4 className="text-xl font-semibold text-white">Rights of Data Subjects</h4>
+                        <p className="text-gray-400 leading-relaxed">
                             Learners have rights to access, correct, request deletion, and restrict processing of their personal data.
                         </p>
                     </div>
 
                     <div className="space-y-3">
-                        <h4 className="text-xl font-semibold text-white text-center">Data Breach Process</h4>
-                        <p className="text-gray-400 leading-relaxed text-center">
+                        <h4 className="text-xl font-semibold text-white">Data Breach Process</h4>
+                        <p className="text-gray-400 leading-relaxed">
                             Any breach must be reported immediately to the Data Protection Officer (DPO), documented, and addressed within 72 hours where applicable.
                         </p>
                     </div>
@@ -290,7 +290,7 @@ export default function StudentPolicy() {
                                     {/* Decorative Gradient */}
                                     <div className="absolute top-0 right-0 w-64 h-64 bg-[#d4a853]/5 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2 group-hover:bg-[#d4a853]/10 transition-colors duration-500" />
 
-                                    <h2 className="text-2xl md:text-3xl font-bold mb-8 text-[#d4a853] font-outfit relative z-10 text-center">
+                                    <h2 className="text-2xl md:text-3xl font-bold mb-8 text-[#d4a853] font-outfit relative z-10">
                                         {section.title}
                                     </h2>
                                     <div className="relative z-10">
