@@ -63,7 +63,7 @@ export default function Footer() {
     };
 
     return (
-        <footer className="relative bg-[#070b14] pt-20 pb-8 overflow-hidden">
+        <footer className="relative bg-[#070b14] pt-32 pb-16 overflow-hidden">
             {/* Top Border */}
             <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#d4a853]/30 to-transparent" />
 
@@ -117,14 +117,15 @@ export default function Footer() {
                     {/* Links Columns */}
                     {Object.entries(footerLinks).map(([category, links]) => (
                         <div key={category}>
-                            <h4 className="text-white font-semibold mb-4">{category}</h4>
-                            <ul className="space-y-3">
+                            <h4 className="text-white font-semibold mb-6">{category}</h4>
+                            <ul className="space-y-4">
                                 {links.map((link, index) => (
                                     <li key={index}>
                                         <a
                                             href={link.href}
-                                            className="text-gray-400 text-sm hover:text-[#d4a853] transition-colors duration-300"
+                                            className="text-gray-400 text-sm hover:text-[#d4a853] transition-colors duration-300 flex items-center gap-2 group"
                                         >
+                                            <span className="w-1.5 h-1.5 rounded-full bg-[#d4a853]/0 group-hover:bg-[#d4a853] transition-all" />
                                             {link.name}
                                         </a>
                                     </li>
