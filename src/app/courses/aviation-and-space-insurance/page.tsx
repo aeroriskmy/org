@@ -9,13 +9,15 @@ const subCourses = [
         title: 'Aerorisk Intermediate Programme in Aviation Insurance Practice',
         about: 'In the aviation industry, choosing the right aircraft insurance is very critical and important. It is important to understand knowledge in aviation insurance for people to embark into the aviation insurance industry. The crucial aspect in this is the knowledge on aircrafts and its function, the mechanism of flying and finally the underwriting and management of aviation insurance. It is a practical industry oriented course and enables people in the aviation insurance industry to perform effectively once completed. This is a ATHE endorsed programme',
         duration: '60 guided learning hours / 4 months',
-        commencement: 'Registration is open now!'
+        commencement: 'Registration is open now!',
+        documentUrl: '/documents/Intermediate_Programme.docx'
     },
     {
         title: 'Aerorisk Advanced Programme in Aviation Insurance Practice',
         about: 'The Aerorisk Advanced Programme in Aviation Insurance Practice builds upon the subjects covered in the intermediate and give a more extensive coverage of aviation insurance knowledge and understanding. You will expand your knowledge and skills more by learning about types of aircrafts and its function, reinsurance, law& claims and policies, clauses and endorsements. This is a ATHE endorsed programme',
         duration: '100 guided learning hours / 4 months',
-        commencement: 'Registration is open now!'
+        commencement: 'Registration is open now!',
+        documentUrl: '/documents/Advanced_Programme.docx'
     },
     {
         title: 'Certificate in Space Insurance',
@@ -84,6 +86,20 @@ export default function AviationSpaceInsurancePage() {
                                         <p className="text-slate-400 leading-relaxed text-sm lg:text-base font-light">
                                             {course.about}
                                         </p>
+                                        {course.documentUrl && (
+                                            <div className="mt-4">
+                                                <a
+                                                    href={course.documentUrl}
+                                                    download
+                                                    className="inline-flex items-center gap-2 px-4 py-2 bg-[#d4a853]/10 border border-[#d4a853]/30 text-[#d4a853] text-sm font-medium rounded-lg hover:bg-[#d4a853] hover:text-white transition-all duration-300"
+                                                >
+                                                    <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v1a2 2 0 002 2h12a2 2 0 002-2v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+                                                    </svg>
+                                                    Download Prospectus (.docx)
+                                                </a>
+                                            </div>
+                                        )}
                                     </div>
 
                                     {/* Meta Info */}
