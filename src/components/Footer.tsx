@@ -25,6 +25,7 @@ const footerLinks = {
     ],
     Legal: [
         { name: 'Privacy Policy', href: '#' },
+        { name: 'Student Policy', href: '/student-policy' },
         { name: 'Terms of Service', href: '#' },
         { name: 'Cookie Policy', href: '#' },
         { name: 'Accessibility', href: '#' },
