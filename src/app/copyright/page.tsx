@@ -5,6 +5,37 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export default function Copyright() {
+    const copyrightSections = [
+        {
+            title: "1. Copyright Ownership",
+            content: (
+                <div className="space-y-4">
+                    <p className="text-gray-400 leading-relaxed">
+                        [Copyright Ownership Content Goes Here]
+                    </p>
+                    <p className="text-gray-400 leading-relaxed">
+                        All content on this website, including text, graphics, logos, and software, is the property of Aviation Insurance Education or its content suppliers and is protected by international copyright laws.
+                    </p>
+                </div>
+            )
+        },
+        {
+            title: "2. Usage Rights",
+            content: (
+                <div className="space-y-4">
+                    <p className="text-gray-400 leading-relaxed">
+                        [Details about usage rights]
+                    </p>
+                    <ul className="list-disc list-inside text-gray-400 space-y-2 ml-2">
+                        <li>You may view, download, and print pages for personal, non-commercial use.</li>
+                        <li>You must not republish material from this website without prior written consent.</li>
+                    </ul>
+                </div>
+            )
+        },
+        // Add more sections as needed
+    ];
+
     return (
         <main className="min-h-screen bg-[#070b14] text-white">
             <Navbar />
@@ -28,46 +59,42 @@ export default function Copyright() {
                             Copyright <span className="text-[#d4a853]">Information</span>
                         </h1>
                         <p className="text-lg md:text-xl text-gray-400 leading-relaxed">
-                            Review our copyright information and intellectual property rights.
+                            Intellectual property rights and usage policy.
                         </p>
                     </motion.div>
                 </div>
             </section>
 
-            {/* Content Section */}
+            {/* Content Sections */}
             <section className="pb-24">
                 <div className="container mx-auto px-6">
-                    <div className="max-w-3xl mx-auto">
-                        <motion.div
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            viewport={{ once: true, margin: "-50px" }}
-                            transition={{ duration: 0.5 }}
-                            className="glass p-10 rounded-2xl border border-white/5 relative overflow-hidden group text-center"
-                        >
-                            {/* Decorative Gradient */}
-                            <div className="absolute top-0 right-0 w-64 h-64 bg-[#d4a853]/5 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2 group-hover:bg-[#d4a853]/10 transition-colors duration-500" />
+                    <div className="max-w-5xl mx-auto">
+                        {copyrightSections.map((section, index) => (
+                            <div key={index}>
+                                <motion.div
+                                    initial={{ opacity: 0, y: 30 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    viewport={{ once: true, margin: "-50px" }}
+                                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                                    className="glass p-8 md:p-10 rounded-2xl border border-white/5 relative overflow-hidden group"
+                                >
+                                    {/* Decorative Gradient */}
+                                    <div className="absolute top-0 right-0 w-64 h-64 bg-[#d4a853]/5 rounded-full blur-[80px] -translate-y-1/2 translate-x-1/2 group-hover:bg-[#d4a853]/10 transition-colors duration-500" />
 
-                            <h2 className="text-2xl font-bold mb-6 text-white relative z-10">
-                                Download Copyright Document
-                            </h2>
+                                    <h2 className="text-2xl md:text-3xl font-bold mb-8 text-[#d4a853] font-outfit relative z-10">
+                                        {section.title}
+                                    </h2>
+                                    <div className="relative z-10">
+                                        {section.content}
+                                    </div>
+                                </motion.div>
 
-                            <p className="text-gray-400 mb-8 max-w-lg mx-auto relative z-10">
-                                Click the button below to view or download our official Copyright document.
-                            </p>
-
-                            <a
-                                href="/documents/copyright.docx"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-flex items-center gap-3 px-8 py-4 bg-[#d4a853] text-[#0a0f1c] font-bold rounded-lg hover:bg-[#e8c879] transition-all relative z-10"
-                            >
-                                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
-                                    <path strokeLinecap="round" strokeLinejoin="round" d="M19.5 14.25v-2.625a3.375 3.375 0 0 0-3.375-3.375h-1.5A1.125 1.125 0 0 1 13.5 7.125v-1.5a3.375 3.375 0 0 0-3.375-3.375H8.25m2.25 0H5.625c-.621 0-1.125.504-1.125 1.125v17.25c0 .621.504 1.125 1.125 1.125h12.75c.621 0 1.125-.504 1.125-1.125V11.25a9 9 0 0 0-9-9Z" />
-                                </svg>
-                                View Document
-                            </a>
-                        </motion.div>
+                                {/* Hidden Barrier between cards */}
+                                {index < copyrightSections.length - 1 && (
+                                    <div className="w-full h-14 md:h-16" aria-hidden="true" />
+                                )}
+                            </div>
+                        ))}
                     </div>
                 </div>
             </section>
