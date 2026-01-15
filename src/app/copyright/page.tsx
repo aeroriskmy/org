@@ -5,35 +5,130 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 
 export default function Copyright() {
-    const copyrightSections = [
+    const policySections = [
         {
-            title: "1. Copyright Ownership",
+            title: "1. Ownership of Content",
             content: (
                 <div className="space-y-4">
                     <p className="text-gray-400 leading-relaxed">
-                        [Copyright Ownership Content Goes Here]
+                        All content published on this website and within Aerorisk programmes, including but not limited to:
+                    </p>
+                    <ul className="list-disc list-inside text-gray-400 space-y-2 ml-2">
+                        <li>Text, articles, and written materials</li>
+                        <li>Course syllabi, training manuals, presentations, slides, and assessments</li>
+                        <li>Proprietary frameworks, methodologies, and learning outcomes</li>
+                        <li>Logos, branding, graphics, videos, and downloadable resources</li>
+                    </ul>
+                    <p className="text-gray-400 leading-relaxed mt-2">
+                        are the intellectual property of Aerorisk, unless otherwise stated.
                     </p>
                     <p className="text-gray-400 leading-relaxed">
-                        All content on this website, including text, graphics, logos, and software, is the property of Aviation Insurance Education or its content suppliers and is protected by international copyright laws.
+                        This content is protected under the Copyright Act 1987 (Malaysia) and applicable international intellectual property laws.
                     </p>
                 </div>
             )
         },
         {
-            title: "2. Usage Rights",
+            title: "2. Proprietary Programmes",
             content: (
                 <div className="space-y-4">
                     <p className="text-gray-400 leading-relaxed">
-                        [Details about usage rights]
+                        All rights, titles, and interests in the programmes remain exclusively with Aerorisk.
+                    </p>
+                    <p className="text-gray-400 leading-relaxed">
+                        No licence or ownership rights are transferred to users, students, partners, or institutions unless expressly agreed in writing.
+                    </p>
+                </div>
+            )
+        },
+        {
+            title: "3. Permitted Use",
+            content: (
+                <div className="space-y-4">
+                    <p className="text-gray-400 leading-relaxed">
+                        Users may:
                     </p>
                     <ul className="list-disc list-inside text-gray-400 space-y-2 ml-2">
-                        <li>You may view, download, and print pages for personal, non-commercial use.</li>
-                        <li>You must not republish material from this website without prior written consent.</li>
+                        <li>View and access content for personal, educational, or non-commercial use</li>
+                        <li>Download materials only where explicitly permitted</li>
+                    </ul>
+                    <p className="text-gray-400 leading-relaxed mt-2">
+                        Any use must retain all copyright and proprietary notices.
+                    </p>
+                </div>
+            )
+        },
+        {
+            title: "4. Prohibited Use",
+            content: (
+                <div className="space-y-4">
+                    <p className="text-gray-400 leading-relaxed">
+                        Without prior written consent from Aerorisk, users may not:
+                    </p>
+                    <ul className="list-disc list-inside text-gray-400 space-y-2 ml-2">
+                        <li>Reproduce, copy, or redistribute content in whole or in part</li>
+                        <li>Modify, adapt, translate, or create derivative works</li>
+                        <li>Sell, sublicense, or commercially exploit any content</li>
+                        <li>Upload or share materials on public platforms, learning management systems, or third-party websites</li>
+                        <li>Use Aerorisk content for training delivery, teaching, or certification purposes</li>
+                    </ul>
+                    <p className="text-gray-400 leading-relaxed mt-2 font-semibold text-red-400">
+                        Unauthorized use may result in legal action.
+                    </p>
+                </div>
+            )
+        },
+        {
+            title: "5. Trademarks",
+            content: (
+                <div className="space-y-4">
+                    <p className="text-gray-400 leading-relaxed">
+                        “Aerorisk”, the Aerorisk logo, and all related programme names are trademarks or proprietary identifiers of Aerorisk.
+                    </p>
+                    <p className="text-gray-400 leading-relaxed">
+                        Unauthorized use of Aerorisk branding is strictly prohibited.
+                    </p>
+                </div>
+            )
+        },
+        {
+            title: "6. Enforcement",
+            content: (
+                <div className="space-y-4">
+                    <p className="text-gray-400 leading-relaxed">
+                        Aerorisk reserves the right to:
+                    </p>
+                    <ul className="list-disc list-inside text-gray-400 space-y-2 ml-2">
+                        <li>Monitor use of its content</li>
+                        <li>Restrict access to materials</li>
+                        <li>Take legal action against copyright infringement, misuse, or unauthorised distribution</li>
                     </ul>
                 </div>
             )
         },
-        // Add more sections as needed
+        {
+            title: "7. Requests for Permission",
+            content: (
+                <div className="space-y-4">
+                    <p className="text-gray-400 leading-relaxed">
+                        Requests to reproduce, license, collaborate, or use Aerorisk content for academic, institutional, or commercial purposes must be made in writing.
+                    </p>
+                    <div className="bg-white/5 p-6 rounded-lg border border-white/10 mt-4">
+                        <p className="text-gray-400">Please contact: <a href="mailto:info@aerorisk.org.my" className="text-[#d4a853] hover:underline">info@aerorisk.org.my</a></p>
+                    </div>
+                </div>
+            )
+        },
+        {
+            title: "8. Changes to This Policy",
+            content: (
+                <div className="space-y-4">
+                    <p className="text-gray-400 leading-relaxed">
+                        Aerorisk may update this policy at any time. Continued use of the website or materials constitutes acceptance of the revised policy.
+                    </p>
+                </div>
+            )
+        }
     ];
 
     return (
@@ -56,10 +151,10 @@ export default function Copyright() {
                         className="text-center max-w-5xl mx-auto"
                     >
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 font-outfit">
-                            Copyright <span className="text-[#d4a853]">Information</span>
+                            Copyright & Intellectual <span className="text-[#d4a853]">Property Policy</span>
                         </h1>
                         <p className="text-lg md:text-xl text-gray-400 leading-relaxed">
-                            Intellectual property rights and usage policy.
+                            Last updated: 2026
                         </p>
                     </motion.div>
                 </div>
@@ -68,8 +163,8 @@ export default function Copyright() {
             {/* Content Sections */}
             <section className="pb-24">
                 <div className="container mx-auto px-6">
-                    <div className="max-w-5xl mx-auto">
-                        {copyrightSections.map((section, index) => (
+                    <div className="max-w-4xl mx-auto">
+                        {policySections.map((section, index) => (
                             <div key={index}>
                                 <motion.div
                                     initial={{ opacity: 0, y: 30 }}
@@ -90,11 +185,21 @@ export default function Copyright() {
                                 </motion.div>
 
                                 {/* Hidden Barrier between cards */}
-                                {index < copyrightSections.length - 1 && (
+                                {index < policySections.length - 1 && (
                                     <div className="w-full h-14 md:h-16" aria-hidden="true" />
                                 )}
                             </div>
                         ))}
+
+                        {/* Bottom Copyright Note */}
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            whileInView={{ opacity: 1 }}
+                            viewport={{ once: true }}
+                            className="text-center mt-16 text-gray-500"
+                        >
+                            © 2026 AeroRisk. All Rights Reserved.
+                        </motion.div>
                     </div>
                 </div>
             </section>

@@ -7,34 +7,160 @@ import Footer from '@/components/Footer';
 export default function PrivacyPolicy() {
     const policySections = [
         {
-            title: "1. Introduction",
+            title: "1. Information We Collect",
+            content: (
+                <div className="space-y-6">
+                    <p className="text-gray-400 leading-relaxed">
+                        We may collect the following types of information:
+                    </p>
+                    <div className="space-y-3">
+                        <h5 className="text-lg font-medium text-[#d4a853]">a. Personal Information</h5>
+                        <ul className="list-disc list-inside text-gray-400 space-y-2 ml-2">
+                            <li>Name</li>
+                            <li>Email address</li>
+                            <li>Phone number</li>
+                            <li>Organisation / Company name</li>
+                            <li>Any other information you voluntarily provide through forms or enquiries</li>
+                        </ul>
+                    </div>
+                    <div className="space-y-3">
+                        <h5 className="text-lg font-medium text-[#d4a853]">b. Non-Personal Information</h5>
+                        <ul className="list-disc list-inside text-gray-400 space-y-2 ml-2">
+                            <li>IP address</li>
+                            <li>Browser type</li>
+                            <li>Device information</li>
+                            <li>Pages visited and time spent on the website</li>
+                            <li>Cookies and similar tracking technologies</li>
+                        </ul>
+                    </div>
+                </div>
+            )
+        },
+        {
+            title: "2. How We Use Your Information",
             content: (
                 <div className="space-y-4">
                     <p className="text-gray-400 leading-relaxed">
-                        [Privacy Policy Introduction Content Goes Here]
+                        We use the collected information to:
                     </p>
+                    <ul className="list-disc list-inside text-gray-400 space-y-2 ml-2">
+                        <li>Respond to enquiries and provide requested services</li>
+                        <li>Process registrations for courses, programmes, or events</li>
+                        <li>Improve our website, services, and user experience</li>
+                        <li>Send updates, newsletters, or promotional materials (with consent)</li>
+                        <li>Comply with legal and regulatory requirements</li>
+                    </ul>
+                </div>
+            )
+        },
+        {
+            title: "3. Disclosure of Information",
+            content: (
+                <div className="space-y-4">
                     <p className="text-gray-400 leading-relaxed">
-                        We are committed to protecting your personal information and your right to privacy.
+                        We do not sell, rent, or trade your personal data. Your information may be shared only with:
+                    </p>
+                    <ul className="list-disc list-inside text-gray-400 space-y-2 ml-2">
+                        <li>Trusted service providers assisting in website hosting, email services, or payment processing</li>
+                        <li>Regulatory or legal authorities when required by law</li>
+                    </ul>
+                    <p className="text-gray-400 leading-relaxed mt-2">
+                        All third parties are required to protect your data and use it only for specified purposes.
                     </p>
                 </div>
             )
         },
         {
-            title: "2. Information We Collect",
+            title: "4. Data Protection and Security",
             content: (
                 <div className="space-y-4">
                     <p className="text-gray-400 leading-relaxed">
-                        [Details about information collection]
+                        We implement appropriate technical and organisational security measures to protect your personal data from unauthorised access, disclosure, alteration, or destruction. However, no method of transmission over the internet is 100% secure.
                     </p>
-                    <ul className="list-disc list-inside text-gray-400 space-y-2 ml-2">
-                        <li>Personal identification information (Name, email address, phone number, etc.)</li>
-                        <li>Log Data</li>
-                        <li>Cookies</li>
-                    </ul>
                 </div>
             )
         },
-        // Add more sections as needed
+        {
+            title: "5. Cookies Policy",
+            content: (
+                <div className="space-y-4">
+                    <p className="text-gray-400 leading-relaxed">
+                        Our website may use cookies to:
+                    </p>
+                    <ul className="list-disc list-inside text-gray-400 space-y-2 ml-2">
+                        <li>Enhance website functionality</li>
+                        <li>Analyse website traffic and usage patterns</li>
+                    </ul>
+                    <p className="text-gray-400 leading-relaxed mt-2">
+                        You may choose to disable cookies through your browser settings, but some features of the website may not function properly.
+                    </p>
+                </div>
+            )
+        },
+        {
+            title: "6. Data Retention",
+            content: (
+                <div className="space-y-4">
+                    <p className="text-gray-400 leading-relaxed">
+                        We retain personal data only for as long as necessary to fulfil the purposes stated in this Privacy Policy or to comply with legal obligations.
+                    </p>
+                </div>
+            )
+        },
+        {
+            title: "7. Your Rights",
+            content: (
+                <div className="space-y-4">
+                    <p className="text-gray-400 leading-relaxed">
+                        In accordance with the Personal Data Protection Act 2010 (Malaysia), you have the right to:
+                    </p>
+                    <ul className="list-disc list-inside text-gray-400 space-y-2 ml-2">
+                        <li>Access your personal data</li>
+                        <li>Request correction of inaccurate or incomplete data</li>
+                        <li>Withdraw consent for data processing</li>
+                        <li>Request deletion of your personal data (subject to legal requirements)</li>
+                    </ul>
+                    <p className="text-gray-400 leading-relaxed mt-2">
+                        Requests can be made by contacting us using the details below.
+                    </p>
+                </div>
+            )
+        },
+        {
+            title: "8. Third-Party Links",
+            content: (
+                <div className="space-y-4">
+                    <p className="text-gray-400 leading-relaxed">
+                        Our website may contain links to third-party websites. We are not responsible for the privacy practices or content of those websites.
+                    </p>
+                </div>
+            )
+        },
+        {
+            title: "9. Changes to This Privacy Policy",
+            content: (
+                <div className="space-y-4">
+                    <p className="text-gray-400 leading-relaxed">
+                        We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated effective date.
+                    </p>
+                </div>
+            )
+        },
+        {
+            title: "10. Contact Us",
+            content: (
+                <div className="space-y-4">
+                    <p className="text-gray-400 leading-relaxed">
+                        If you have any questions or concerns regarding this Privacy Policy or your personal data, please contact:
+                    </p>
+                    <div className="bg-white/5 p-6 rounded-lg border border-white/10">
+                        <p className="text-white font-semibold text-lg mb-2">Aerorisk</p>
+                        <p className="text-gray-400">Email: <a href="mailto:info@aerorisk.org.my" className="text-[#d4a853] hover:underline">info@aerorisk.org.my</a></p>
+                        <p className="text-gray-400">Phone: <a href="tel:0182343926" className="text-[#d4a853] hover:underline">0182343926</a></p>
+                    </div>
+                </div>
+            )
+        }
     ];
 
     return (
@@ -59,8 +185,11 @@ export default function PrivacyPolicy() {
                         <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 font-outfit">
                             Privacy <span className="text-[#d4a853]">Policy</span>
                         </h1>
-                        <p className="text-lg md:text-xl text-gray-400 leading-relaxed">
-                            Our commitment to protecting your privacy.
+                        <p className="text-lg md:text-xl text-gray-400 leading-relaxed mb-4">
+                            Effective Date: 2026
+                        </p>
+                        <p className="text-gray-400 leading-relaxed max-w-3xl mx-auto">
+                            At Aerorisk.org.my, we respect your privacy and are committed to protecting your personal data. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website www.aerorisk.org.my or use our services.
                         </p>
                     </motion.div>
                 </div>
@@ -69,7 +198,7 @@ export default function PrivacyPolicy() {
             {/* Content Sections */}
             <section className="pb-24">
                 <div className="container mx-auto px-6">
-                    <div className="max-w-5xl mx-auto">
+                    <div className="max-w-4xl mx-auto">
                         {policySections.map((section, index) => (
                             <div key={index}>
                                 <motion.div
