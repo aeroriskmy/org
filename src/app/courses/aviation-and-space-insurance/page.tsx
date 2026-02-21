@@ -7,7 +7,7 @@ import Footer from '@/components/Footer';
 const subCourses = [
     {
         title: 'Aerorisk Intermediate Programme in Aviation Insurance Practice',
-        about: 'In the aviation industry, choosing the right aircraft insurance is very critical and important. It is important to understand knowledge in aviation insurance for people to embark into the aviation insurance industry. The crucial aspect in this is the knowledge on aircrafts and its function, the mechanism of flying and finally the underwriting and management of aviation insurance. It is a practical industry oriented course and enables people in the aviation insurance industry to perform effectively once completed. This is a ATHE endorsed programme',
+        about: 'In the aviation industry, choosing the right aircraft insurance is very critical and important. It is important to understand knowledge in aviation insurance for people to embark into the aviation insurance industry. The crucial aspect in this is the knowledge on aircrafts and its function, the mechanism of flying and finally the underwriting and management of aviation insurance. It is a practical industry oriented course and enables people in the aviation insurance industry to perform effectively once completed.',
         duration: '60 guided learning hours / 4 months',
         commencement: 'Registration is open now!',
         documentUrl: '/documents/Intermediate_Programme.docx'
